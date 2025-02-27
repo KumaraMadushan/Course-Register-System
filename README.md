@@ -1,1 +1,1 @@
-# Project Name
+# Course Registration System
