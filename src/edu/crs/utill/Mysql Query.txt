@@ -16,7 +16,7 @@ CREATE TABLE Students (
     Stu_Id INT AUTO_INCREMENT PRIMARY KEY,
     Full_Name VARCHAR(50),
     Dob DATE,
-    Contact BIGINT,
     Program VARCHAR(45),
-    Enroll_Year YEAR
+    Enroll_Year YEAR,
+    Contact BIGINT
 );

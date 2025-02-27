@@ -5,6 +5,7 @@
 package edu.crs.dao;
 
 import edu.crs.dao.impl.SingupDaoImpl;
+import edu.crs.dao.impl.StudentRegiserDaoImpl;
 
 /**
  *
@@ -32,7 +33,7 @@ public class DaoFactory {
             case SINGUP:
                 return new SingupDaoImpl();
             case STUDNET:
-                return null;
+                return new StudentRegiserDaoImpl();
             default:
                 throw null;
         }

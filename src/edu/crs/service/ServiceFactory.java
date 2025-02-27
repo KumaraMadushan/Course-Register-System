@@ -5,6 +5,7 @@
 package edu.crs.service;
 
 import edu.crs.service.custom.impl.SignupServiceImpl;
+import edu.crs.service.custom.impl.StudentRegiserServiceImpl;
 
 /**
  *
@@ -29,8 +30,8 @@ public class ServiceFactory {
         switch (serviceType) {
             case SINGUP:
                 return new SignupServiceImpl();
-            case LOGIN:
-                return null;
+            case STUDENT:
+                return new StudentRegiserServiceImpl();
             default:
                 throw null;
         }
@@ -38,7 +39,7 @@ public class ServiceFactory {
     }
 
     public enum ServiceType {
-        SINGUP, LOGIN
+        SINGUP, STUDENT
     }
 
 }
