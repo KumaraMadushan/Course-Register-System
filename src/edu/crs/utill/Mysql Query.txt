@@ -1,0 +1,22 @@
+CREATE TABLE Singup (
+User_Id INT AUTO_INCREMENT PRIMARY KEY,
+Full_Name VARCHAR(100),
+Dob DATE,
+Email VARCHAR(50),
+Contact BIGINT,
+Role VARCHAR(10),
+Program VARCHAR(50),
+User_Name VARCHAR(50) UNIQUE NOT NULL,
+Password VARCHAR(255)
+);
+
+
+
+CREATE TABLE Students (
+    Stu_Id INT AUTO_INCREMENT PRIMARY KEY,
+    Full_Name VARCHAR(50),
+    Dob DATE,
+    Contact BIGINT,
+    Program VARCHAR(45),
+    Enroll_Year YEAR
+);
